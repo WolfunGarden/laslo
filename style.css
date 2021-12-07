@@ -1,0 +1,215 @@
+
+@font-face {
+  font-family: "8bitoperator JVE Regular";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/184191/8bitoperator_jve.eot?") format("eot"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/184191/8bitoperator_jve.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/184191/8bitoperator_jve.ttf") format("truetype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/184191/8bitoperator_jve.svg#8bitoperator-JVE") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: #000;
+  font-family: '8bitoperator JVE Regular';
+  font-size: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.undertale {
+  width: 640px;
+  height: 480px;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+  transform: scale(1);
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.laslo-container {
+  position: absolute;
+  left: 24px;
+  top: 19px;
+  width: 610px;
+  height: 236px;
+}
+.laslo img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+  width: 30%;
+  max-height: 248px;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: pixelated;
+}
+
+.menu {
+  border: 5px solid #fff;
+  padding: 20px 40px;
+  position: absolute;
+  bottom: 98px;
+  left: 43px;
+  width: 485px;
+  height: 90px;
+  z-index: 10;
+  transition: 0.3s height;
+  background: #000;
+  overflow: hidden;
+  opacity: 1 !important;
+}
+.menu-option {
+  display: inline-block;
+  padding-left: 55px;
+  width: 184px;
+}
+.menu-act-option {
+  display: inline-block;
+  padding-left: 55px;
+  width: 184px;
+}
+
+.menu-act-option.active {
+  background: url("https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626867/heart_lpr6lv.png") #000;
+  background-repeat: no-repeat;
+  background-position: 7px center;
+  color: #ff0;
+}
+
+.menu-hidden {
+  display: none;
+}
+.menu-tall {
+  height: 160px;
+}
+
+.menu-mercy {
+  color: #ff0;
+}
+
+.status-bar {
+  position: absolute;
+  top: 405px;
+  left: 159px;
+}
+.status-bar * {
+  display: inline-block;
+}
+.lvl {
+  margin-right: 45px;
+}
+
+.action {
+  position: absolute;
+  top: 443px;
+  left: 43px;
+}
+.action-option {
+  display: inline-block;
+  background: #000;
+  color: #ff7f27;
+  border: 2px solid #ff7f27;
+  text-align: right;
+  padding: 5px;
+  width: 97px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 33px;
+  margin-right: 40px;
+}
+
+.action-option.no {
+  opacity: 0.5;
+}
+
+.action-option-1 {
+  background: url("https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626867/fight_qmeuhy.png") #000;
+  background-repeat: no-repeat;
+  background-position: 3px center;
+  background-size: 23px;
+}
+.action-option-2 {
+  background: url("https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626867/act_mzziin.png") #000;
+  background-repeat: no-repeat;
+  background-position: 3px center;
+  background-size: 23px;
+}
+.action-option-3 {
+  background: url("https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626868/item_p6y2ix.png") #000;
+  background-repeat: no-repeat;
+  background-position: 3px center;
+  background-size: 23px;
+}
+.action-option-4 {
+  background: url("https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626869/mercy_nzbv67.png") #000;
+  background-repeat: no-repeat;
+  background-position: 3px center;
+  background-size: 23px;
+}
+.action-option:last-child {
+  margin-right: 0;
+}
+.action-option.active {
+  background: url("https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626867/heart_lpr6lv.png") #000;
+  background-repeat: no-repeat;
+  background-position: 7px center;
+  color: #ff0;
+  border: 2px solid #ff0;
+}
+
+.restart {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 20;
+  cursor: initial;
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.audio {
+  display: none;
+}
+.typed-cursor {
+  display: none;
+}
+.audio-toggle {
+  color: #fff;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+.audio-toggle:hover {
+  color: #ff0;
+}
